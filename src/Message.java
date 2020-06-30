@@ -30,9 +30,9 @@ public class Message extends HttpServlet {
         String color = "black";
 
         if (messageType == 1)
-            color = "red";
+            color = "black";
         if (messageType == 2)
-            color = "green";
+            color = "white";
         if (messageType == 3)
             color = "yellow";
 
@@ -40,10 +40,13 @@ public class Message extends HttpServlet {
         out.print("<head><meta charset='UTF-8'>");
         out.print("<meta name='viewport' content='width=device-width, initial-scale=1.0'>");
         out.print("<title>Registration</title>");
-        out.print("<link rel='icon' href='images/logo.png'>");
-        out.print("<link rel='stylesheet' href='style.css'></head>");
+        out.print("<link rel='icon' href='images/avatar.jpg'>");
+		//out.print("<link href='css/materialize.min.css' type='text/css' rel='stylesheet'>");
+		//out.print("<link href='css/style.min.css' type='text/css' rel='stylesheet'>");
+		//out.print("<link href='css/custom/custom.min.css' type='text/css' rel='stylesheet'>");
+        out.print("<link rel='stylesheet' href='css/layouts/page-center.css' type='text/css'></head>");
         out.print(
-                "<body><center><img src='images/logo.png' width='75'><h1>Display Message</h1><table width='50%' id='cus_table1'>");
+                "<body style='background-color:#b30000;'><center><img src='images/avatar.jpg' width='75'><h1>Display Message</h1><table width='50%' id='cus_table1'>");
         out.print("<tr><td align='center' style='color:" + color + "'>");
         out.print("<h2>" + messageText + "</h2> </td></tr>");
         out.print("<tr><td align='center'> <a href=" + redirectPage

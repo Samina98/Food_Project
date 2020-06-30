@@ -7,17 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="msapplication-tap-highlight" content="no">
-  <title>Food Menu</title>
+  <title>DivaaDine</title>
 
   <!-- Favicons-->
   <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
   <!-- Favicons-->
   <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
-  <!-- For iPhone -->
-  <meta name="msapplication-TileColor" content="#00bcd4">
-  <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
-  <!-- For Windows Phone -->
-
+  
 
   <!-- CORE CSS-->
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" sizes="32x32">
@@ -28,48 +24,7 @@
   <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
   <link href="js/plugins/data-tables/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection">
   
-     <style type="text/css">
-  .input-field div.error{
-    position: relative;
-    top: -1rem;
-    left: 0rem;
-    font-size: 0.8rem;
-    color:#FF4081;
-    -webkit-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    -o-transform: translateY(0%);
-    transform: translateY(0%);
-  }
-  .input-field label.active{
-      width:100%;
-  }
-  .left-alert input[type=text] + label:after, 
-  .left-alert input[type=password] + label:after, 
-  .left-alert input[type=email] + label:after, 
-  .left-alert input[type=url] + label:after, 
-  .left-alert input[type=time] + label:after,
-  .left-alert input[type=date] + label:after, 
-  .left-alert input[type=datetime-local] + label:after, 
-  .left-alert input[type=tel] + label:after, 
-  .left-alert input[type=number] + label:after, 
-  .left-alert input[type=search] + label:after, 
-  .left-alert textarea.materialize-textarea + label:after{
-      left:0px;
-  }
-  .right-alert input[type=text] + label:after, 
-  .right-alert input[type=password] + label:after, 
-  .right-alert input[type=email] + label:after, 
-  .right-alert input[type=url] + label:after, 
-  .right-alert input[type=time] + label:after,
-  .right-alert input[type=date] + label:after, 
-  .right-alert input[type=datetime-local] + label:after, 
-  .right-alert input[type=tel] + label:after, 
-  .right-alert input[type=number] + label:after, 
-  .right-alert input[type=search] + label:after, 
-  .right-alert textarea.materialize-textarea + label:after{
-      right:70px;
-  }
-  </style> 
+    
 </head>
 
 <body>
@@ -118,20 +73,10 @@
                 
             </div>
             </li>
-            <li class="bold active"><a href="#" class="waves-effect waves-cyan"><i class="mdi-editor-border-color"></i> Food Menu</a>
-            </li>
-           <li class="bold"><a href="all-orders.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i>Past Orders</a>
- 
-                        </li>
-                  	
-            <li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-action-question-answer"></i>Cart</a>
-            </li>	
-			<li class="bold"><a href="login.html"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
-                            
-                        </li>
-                    </ul>
-                </li>
-        </ul>
+            <li class="bold "><a><form action="Itemlist" class="waves-effect waves-cyan" method="get"><i class="mdi-editor-border-color"></i><input type="submit" value="Food Menu"></form></a></li>
+           <li class="bold"><a><form action="Orderlist" class="waves-effect waves-cyan" method="get"><i class="mdi-editor-insert-invitation"></i><input type="submit" value="Cart"></form></a></li>	
+			<li class="bold"><a href="login.html"><i class="mdi-hardware-keyboard-tab"></i> Logout</a></li>
+                    </ul></li></ul>
         <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
         </aside>
       <!-- END LEFT SIDEBAR NAV-->
@@ -141,77 +86,30 @@
       <!-- START CONTENT -->
       <section id="content">
 
-        <!--breadcrumbs start-->
-        <div id="breadcrumbs-wrapper">
-          <div class="container">
-            <div class="row">
-              <div class="col s12 m12 l12">
-                <h5 class="breadcrumbs-title">Food Menu</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--breadcrumbs end-->
+        
 
 
         <!--start container-->
         <div class="container">
-          <p class="caption">Add, Edit or Remove Menu Items.</p>
+          
           <div class="divider"></div>
-		  <form class="formValidate" id="formValidate" method="post" action="routers/menu-router.php" novalidate="novalidate">
+		 
             <div class="row">
-              <div class="col s12 m4 l3">
-                <h4 class="header">Order Food</h4>
-              </div>
-              <div>
-				<table id="data-table-admin" class="responsive-table display" cellspacing="0">
-                    <thead>
-                      <tr>
-                        <th>Name</th>
-                        <th>Item Price/Piece</th>
-                        <th>Available</th>
-                      </tr>
-                    </thead>
-
-                    <tbody>
-				
-                    </tbody>
-</table>
-              </div>
-			 
+              <br>
+			  <br>
+			  <br>
+			  <br>
+			  <center>
+                <h1 class="header" ><b>Welcome To DivaaDine</b></h1><img src="images/favicon/apple-touch-icon-152x152.png">
+              </center>
+              	</br></br></br></br>				
             </div>
-			</form>
-		  <form class="formValidate" id="formValidate1" method="post" action="routers/add-item.php" novalidate="novalidate">
-            <div class="row">
-              <div class="col s12 m4 l3">
-                <h4 class="header">Add Item</h4>
-              </div>
-              <div>
-<table>
-                    <thead>
-                      <tr>
-                        <th data-field="id">Name</th>
-                        <th data-field="name">Item Price/Piece</th>
-                      </tr>
-                    </thead>
-
-                    <tbody>
-				
-                    </tbody>
-</table>
-              </div>
-			  <div class="input-field col s12">
-                              <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Add
-                                <i class="mdi-content-send right"></i>
-                              </button>
-                            </div>
-            </div>
-			</form>			
+			
+		        	
             <div class="divider"></div>
             
           </div>
-        </div>
-        </div>
+       
         <!--end container-->
 
       </section>
@@ -219,7 +117,7 @@
     </div>
     <!-- END WRAPPER -->
 
-
+</div>
 
 
   <!-- //////////////////////////////////////////////////////////////////////////// -->
@@ -261,52 +159,7 @@
     <!--custom-script.js - Add your own theme custom JS-->
     <script type="text/javascript" src="js/custom-script.js"></script>
 
-   	    <script type="text/javascript">
-    
-        errorElement : 'div',
-        errorPlacement: function(error, element) {
-          var placement = $(element).data('error');
-          if (placement) {
-            $(placement).append(error)
-          } else {
-            error.insertAfter(element);
-          }
-        }
-     });
-    </script>
-    <script type="text/javascript">
-    $("#formValidate1").validate({
-        rules: {
-		name: {
-				required: true,
-				minlength: 5
-			},
-		price: {
-				required: true,
-				min: 0
-			},
-	},
-        messages: {
-		name: {
-				required: "Enter item name",
-				minlength: "Minimum length is 5 characters"
-			},
-		 price: {
-				required: "Enter item price",
-				minlength: "Minimum item price is Rs.0"
-			},
-	},
-		errorElement : 'div',
-        errorPlacement: function(error, element) {
-          var placement = $(element).data('error');
-          if (placement) {
-            $(placement).append(error)
-          } else {
-            error.insertAfter(element);
-          }
-        }
-     });
-    </script>
+   	    
 </body>
 
 </html>

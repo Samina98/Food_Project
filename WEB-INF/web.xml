@@ -15,14 +15,64 @@
 </servlet-mapping>
 <servlet>
     <servlet-name>servlet2</servlet-name>
-    <servlet-class>LoginDao1</servlet-class>
+    <servlet-class>LoginParticipant</servlet-class>
 </servlet>
 
 <servlet-mapping> 
     <servlet-name>servlet2</servlet-name>
-    <url-pattern>/LoginDao1</url-pattern>
+    <url-pattern>/Login</url-pattern>
 </servlet-mapping>
 
+<servlet>
+    <servlet-name>servlet3</servlet-name>
+    <servlet-class>ShowItem</servlet-class>
+</servlet>
+
+<servlet-mapping> 
+    <servlet-name>servlet3</servlet-name>
+    <url-pattern>/Itemlist</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>servlet4</servlet-name>
+    <servlet-class>ConfirmOrder</servlet-class>
+</servlet>
+
+<servlet-mapping> 
+    <servlet-name>servlet4</servlet-name>
+    <url-pattern>/Confirm</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>servlet5</servlet-name>
+    <servlet-class>MyCart</servlet-class>
+</servlet>
+
+<servlet-mapping> 
+    <servlet-name>servlet5</servlet-name>
+    <url-pattern>/Orderlist</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>servlet6</servlet-name>
+    <servlet-class>AddItem</servlet-class>
+</servlet>
+
+<servlet-mapping> 
+    <servlet-name>servlet6</servlet-name>
+    <url-pattern>/Add</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>servlet7</servlet-name>
+    <servlet-class>DeleteItem</servlet-class>
+</servlet>
+
+<servlet-mapping> 
+    <servlet-name>servlet7</servlet-name>
+    <url-pattern>/Delete</url-pattern>
+</servlet-mapping>
+
+<session-config>
+    <session-timeout>15</session-timeout>
+  </session-config>
 
 
 </web-app>
